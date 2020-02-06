@@ -13,13 +13,14 @@ html, body {
 }
 
 .container{
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
     height: 100%; 
 }
 
 .header{
-    min-width: 1280px;
+    padding: 0 2%;
     width: 100%;
     height: 90px;
     background-color: #212E3F;
@@ -29,7 +30,6 @@ header h2{
     color: blanchedalmond;
 }
 .banner{
-    min-width: 1280px;
     width: 100%;
     height: 500px;
     background-image: url('../imagens/fundo.jpg');
@@ -37,13 +37,14 @@ header h2{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding: 0 2%;
 }
 .Descricao{
     float: left;
-    max-width: 800px;
+    max-width: 700px;
+    width: 100%;
     margin-top: 60px;
     background-color: rgba(26,37,50,0.6);
-    width: 100%;
     padding: 50px;
     color: white;
 }
@@ -119,7 +120,6 @@ header h2{
 }
 
 .section-loren{
-    min-width: 1280px;
     width: 100%;
     background-color: rgba(218, 218, 218, 0.6);
     padding: 50px 2%;
@@ -163,3 +163,47 @@ footer{
     padding: 50px;
     text-align: center;
 }
+
+@media screen and (max-width: 1280px) {
+    .header{
+        height: auto;
+        text-align: center;
+        padding: 15px 0;
+    }
+    .banner{
+        height: auto;
+        padding: 40px 2%;
+        text-align: center;
+    }
+    .form{
+        max-width: 400px;
+        width: 90%;
+        height: 100%;
+        float: none;
+        display: inline-block;
+        position: relative;
+        top: 0;
+        padding: 30px 0;
+        margin-top: 30px;
+    }
+    .Descricao{
+        float: none;
+        max-width: 500px;
+        width: 90%;
+        display: inline-block;
+        margin-top: 0px;
+        padding: 30px 0;
+        height: auto;
+       
+    }
+}
+@media screen and (max-width: 900px) {
+    .conteudo{
+        width: 100%;
+        display: inline-block;
+        margin: 10px;
+        padding: 30px 10%;
+    }
+
+}
+    
